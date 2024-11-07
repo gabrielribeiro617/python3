@@ -1,0 +1,5 @@
+print('==' * 20)
+print('  CALCULADORA')
+print('==' * 20)
+print('Insira a sua expressão:')
+exp = input('-> ')
