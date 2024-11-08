@@ -52,17 +52,17 @@ def titulo(txt):
 
 # Programa Principal
 arquivo = 'historico_calculos.txt'
+
 if not arquivoExiste(arquivo):
     arquivoCriar(arquivo)
-
+    
 titulo('CALCULADORA')
+
 while True:
     print('[ h -> ver histórico | s - > sair ]')
     print('Insira a sua expressão:')
-
     exp = input('=> ').lower()
     sleep(0.5)
-
     if exp == 'h':
         titulo('HISTÓRICO')
         arquivoLer(arquivo)
