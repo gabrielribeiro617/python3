@@ -15,4 +15,5 @@ if data1 > data2:
     recente = data1
 else: 
     recente = data2
+    
 print(f'Data mais recente: {recente[2]}/{recente[1]}/{recente[0]}')
