@@ -76,7 +76,7 @@ while True:
         cadastro(arquivo, exp, res)
         print(f'= {res}')
         while True:
-            cont = str(input('Quer continuar [s/n]? ')).lower()
+            cont = str(input('Quer continuar [s/n]? ')).lower().strip()[0]
             if cont in 'sn':
                 sleep(0.5)
                 print('--' * 20)
