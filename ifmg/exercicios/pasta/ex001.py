@@ -10,7 +10,12 @@ print('==' * 30)
 for cont in range(3):
     print(f'Funcionario {cont + 1}:')
     nome = str(input(' Nome: ')).title().strip()
-    salario = float(input(' Salário: R$ '))
+    while True:
+        try:
+            salario = float(input(' Salário: R$ '))
+            break  
+        except:
+            print('Erro! Escreva apenas números')
     if salario <= 2000:
         sal_novo = salario * 1.20
     elif 2000 < salario <= 5000:
